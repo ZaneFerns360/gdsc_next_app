@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from "next/link";
 import Image from "next/image";
-
+import { ThemeToggle } from './Theme';
 const Nav = () => {
   return (
         
@@ -22,6 +22,7 @@ const Nav = () => {
               <Link href='/about' className='blue_link'>Events</Link>
               <Link href='/about' className='blue_link'>Our Team</Link>
               <Link href='/about' className='blue_link'>Contact Us</Link>
+              <ThemeToggle />
             </div>
           </nav>
         )
