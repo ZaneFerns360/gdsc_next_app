@@ -5,15 +5,24 @@ import { ThemeToggle } from './Theme';
 const Nav = () => {
   return (
         
-          <nav className='flex-between gap-x-1 w-full mb-2 max-sm:gap-x-0 min-w-[360px] bg-white'>
+          <nav className='flex-between gap-x-1 w-full max-sm:gap-x-0 min-w-[360px] bg-white dark:bg-black'>
             <Link href='/' className='flex gap-2 flex-center pl-1 max-sm:gap-0'>
               <Image
                 src='/assets/GDSC_CRCE.png'
                 alt='logo'
                 width={400}
                 height={200}
-                className='object-contain'
+                className='object-contain dark:hidden'
+              />  
+              <Image
+                src='/assets/GDSC_CRCE2.png'
+                alt='logo'
+                width={400}
+                height={200}
+                className='object-contain scale-0 dark:scale-100'
               />
+      
+
             </Link>
             <div className='flex pr-28'>
               <Link href='/posts' className='blue_link'>Home</Link>

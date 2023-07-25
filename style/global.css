@@ -181,9 +181,6 @@
 
   @layer components {
     .blue_link {
-      @apply text-blue-900 px-2 text-base pl-5 pr-5 mt-2
-    }
-    .blue_link:hover {
-      @apply text-blue-600;
+      @apply text-blue-900 px-2 text-base pl-5 pr-5 mt-2 hover:text-blue-600 dark:text-blue-700 dark:hover:text-red-600
     }
   }
