@@ -25,12 +25,12 @@ const Nav = () => {
 
             </Link>
             <div className='flex pr-28'>
-              <Link href='/posts' className='blue_link'>Home</Link>
-              <Link href='/about' className='blue_link'>About Us</Link>
-              <Link href='/about' className='blue_link'>What We Do</Link>
-              <Link href='/about' className='blue_link'>Events</Link>
-              <Link href='/about' className='blue_link'>Our Team</Link>
-              <Link href='/about' className='blue_link'>Contact Us</Link>
+              <Link href='/' className='blue_link'>Home</Link>
+              <Link href='/' className='blue_link'>About Us</Link>
+              <Link href='/' className='blue_link'>What We Do</Link>
+              <Link href='/' className='blue_link'>Events</Link>
+              <Link href='/' className='blue_link'>Our Team</Link>
+              <Link href='/' className='blue_link'>Contact Us</Link>
               <ThemeToggle />
             </div>
           </nav>

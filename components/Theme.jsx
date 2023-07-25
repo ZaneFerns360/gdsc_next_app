@@ -1,20 +1,29 @@
 "use client"
-
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "@/components/ui/button";
 import { Icons } from "@/components/icons";
 
 export function ThemeToggle() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark"); // Set the default theme to "dark"
 
   const handleThemeToggle = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-    if (theme === "light") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
+
+  useEffect(() => {
+    // Apply the "dark" class to the document when the component mounts on the client side
+    document.documentElement.classList.add("dark");
+  }, []);
+
+  useEffect(() => {
+    // Update the "dark" class whenever the theme state changes
+    if (theme === "light") {
+      document.documentElement.classList.remove("dark");
+    } else {
+      document.documentElement.classList.add("dark");
+    }
+  }, [theme]);
+
 
   return (
     <Button variant="ghost" size="sm" onClick={handleThemeToggle}>
