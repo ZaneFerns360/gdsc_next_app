@@ -1,7 +1,7 @@
-import { Loader2, Moon, SunMedium, Twitter } from "lucide-react"
+import { Loader2, Moon, Sun, Twitter } from "lucide-react"
 
 export const Icons = {
-  sun: SunMedium,
+  sun: Sun,
   moon: Moon,
   twitter: Twitter,
   loader: Loader2,
